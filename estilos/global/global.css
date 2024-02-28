@@ -24,7 +24,7 @@ img {
 }
 
 .btn {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   background-color: var(--cor-2);
   padding: 10px 38px;
