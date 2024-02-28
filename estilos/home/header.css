@@ -1,0 +1,157 @@
+.header-bg {
+  background-color: #fff6e4;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.header-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.header-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.header-menu a {
+  position: relative;
+  font-size: 1rem;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: var(--cor-2);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+.header-menu a:hover {
+  color: var(--cor-2);
+}
+
+.btn-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 715px) {
+  .header-menu a:hover {
+    color: var(--cor-4);
+  }
+
+  .header-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 180px;
+    right: 0px;
+    background-color: #a10f0fc0;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden; /* PARA ESCONDER O MENU ATÉ QUE A FUNÇÃO DO NAV.ACTIVE SEJA FEITA */
+    overflow-y: hidden; /* PARA ESCONDER O MENU ATÉ QUE A ANIMAÇÃO DO NAV.ACTIVE SEJA FEITA */
+  }
+
+  .nav.active .header-menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .header-menu a {
+    display: block;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    color: var(--cor-0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .header-menu a::after {
+    background-color: var(--cor-4);
+  }
+
+  .header-menu a:hover::after {
+    width: 30%;
+  }
+
+  .btn-mobile {
+    color: var(--cor-1);
+    font-weight: 600;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  .hamburguer {
+    color: var(--cor-1);
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  .hamburguer::after,
+  .hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor; /* PARA COPIAR A COR QUE A GENTE ESCOLHEU NO HAMBUMERGUER, ASSIM MUDA AS CORES DOS 3 TRACINHOS DE UMA VEZ*/
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative; /* PARA CONSEGUIRMOS MANIPULAR O TOP DO AFTER, PARA ROTACIONAR OS TRACINHOS PARA VIRAR UM X */
+  }
+
+  .nav.active .hamburguer {
+    border-top-color: transparent; /* PARA SUMIR O TRACINHO DE CIMA */
+  }
+
+  .nav.active .hamburguer::before {
+    transform: rotate(135deg); /* PARA FAZER A ROTAÇÃO DO X */
+  }
+
+  .nav.active .hamburguer::after {
+    transform: rotate(-135deg); /* PARA FAZER A ROTAÇÃO DO X */
+    top: -7px; /* PARA DEIXAR ELE NA ALTURA PERFEITA PAR VIRAR UM X, PORQUE SE NÃO DIMINUIR O TOP VAI FICAR MAIS PRA BAIXO O TRAÇO */
+  }
+}
+
+@media (max-width: 712px) {
+  .nav {
+    padding-left: 20px;
+  }
+}
