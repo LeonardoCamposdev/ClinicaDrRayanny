@@ -1,14 +1,17 @@
 .header-bg {
   background-color: #fff6e4;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
 }
 
 .header-container {
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 0px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .header-logo {
