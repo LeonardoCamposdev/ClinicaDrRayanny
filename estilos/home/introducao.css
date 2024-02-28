@@ -2,7 +2,36 @@
   background: url(/imgs/img-introducao.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
   margin-bottom: 40px;
   position: relative;
+}
+
+.introducao-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.introducao-conteudo h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-top: 220px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.introducao-conteudo p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.introducao-conteudo .btn {
+  display: block;
+  font-size: 1rem;
+  margin-left: 40px;
 }
