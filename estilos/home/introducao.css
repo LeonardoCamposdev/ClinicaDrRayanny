@@ -17,17 +17,19 @@
 }
 
 .introducao-conteudo h1 {
-  font-size: 3rem;
+  font-size: 3.1rem;
   line-height: 1.3;
   margin-top: 220px;
   margin-bottom: 30px;
   padding-left: 40px;
+  text-shadow: 4px 4px 0px var(--cor-1);
 }
 
 .introducao-conteudo p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   padding-left: 40px;
+  text-shadow: 1px 2px 0px var(--cor-1);
 }
 
 .introducao-conteudo .btn {
