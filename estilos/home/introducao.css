@@ -57,7 +57,7 @@
 
 @media (max-width: 450px) {
   .introducao-bg {
-    min-height: 80vh;
+    height: 700px;
   }
   .introducao-conteudo {
     padding-top: 80px;
