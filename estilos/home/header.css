@@ -50,7 +50,7 @@
 }
 
 .header-menu a:hover {
-  color: var(--cor-2);
+  color: var(--cor-1);
 }
 
 .btn-mobile {
@@ -115,7 +115,7 @@
   }
 
   .header-menu a::after {
-    background-color: var(--cor-4);
+    background-color: var(--cor-1);
   }
 
   .header-menu a:hover::after {
