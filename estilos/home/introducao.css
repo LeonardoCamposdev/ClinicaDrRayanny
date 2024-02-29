@@ -49,4 +49,21 @@
   .introducao-conteudo h1 {
     font-size: 3rem;
   }
+
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .introducao-bg {
+    height: 600px;
+  }
+  .introducao-conteudo {
+    padding-top: 100px;
+  }
+
+  .introducao-conteudo h1 {
+    font-size: 2.1rem;
+  }
 }
