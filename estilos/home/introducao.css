@@ -60,10 +60,15 @@
     height: 600px;
   }
   .introducao-conteudo {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .introducao-conteudo h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .introducao-conteudo p {
+    font-size: 1.2rem;
   }
 }
