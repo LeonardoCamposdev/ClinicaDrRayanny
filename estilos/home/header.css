@@ -5,10 +5,6 @@
   bottom: 0;
   width: 300px;
   z-index: 9997;
-  padding: 0 15px;
-}
-.header-container {
-  padding-left: 0px;
 }
 
 .header-logo {
@@ -22,7 +18,6 @@
 
 .header-conteudo {
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -30,12 +25,20 @@
 .header-menu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  height: 100vh;
+  visibility: visible;
+  overflow-y: auto;
+  background-color: #fff6e4;
 }
 
 .header-menu a {
   position: relative;
   font-size: 1rem;
+  display: block;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  color: var(--cor-1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .header-menu a::after {
@@ -43,14 +46,14 @@
   display: block;
   height: 2px;
   width: 0px;
-  background-color: var(--cor-2);
+  background-color: var(--cor-1);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
 }
 
 .header-menu a:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 .header-menu a:hover {
@@ -70,25 +73,10 @@
   height: 100vh;
 }
 
-@media (max-width: 900px) {
-  .btn {
-    display: none;
+@media (max-width: 1260px) {
+  .header-conteudo {
+    width: 100vw;
   }
-
-  .header-logo {
-    display: none;
-  }
-
-  .header-logo-mobile {
-    display: block;
-    height: 150px;
-    width: 150px;
-    visibility: hidden; /* PARA ESCONDER O MENU ATÉ QUE A FUNÇÃO DO NAV.ACTIVE SEJA FEITA */
-    overflow-y: hidden; /* PARA ESCONDER O MENU ATÉ QUE A ANIMAÇÃO DO NAV.ACTIVE SEJA FEITA */
-  }
-}
-
-@media (max-width: 715px) {
   .header-menu a:hover {
     color: var(--cor-1);
   }
@@ -165,6 +153,12 @@
     position: relative; /* PARA CONSEGUIRMOS MANIPULAR O TOP DO AFTER, PARA ROTACIONAR OS TRACINHOS PARA VIRAR UM X */
   }
 
+  .nav {
+    align-self: end;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
   .nav.active .hamburguer {
     border-top-color: transparent; /* PARA SUMIR O TRACINHO DE CIMA */
   }
@@ -177,12 +171,25 @@
     transform: rotate(-135deg); /* PARA FAZER A ROTAÇÃO DO X */
     top: -7px; /* PARA DEIXAR ELE NA ALTURA PERFEITA PAR VIRAR UM X, PORQUE SE NÃO DIMINUIR O TOP VAI FICAR MAIS PRA BAIXO O TRAÇO */
   }
+  .btn {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-logo-mobile {
+    display: block;
+    height: 150px;
+    width: 150px;
+    visibility: hidden; /* PARA ESCONDER O MENU ATÉ QUE A FUNÇÃO DO NAV.ACTIVE SEJA FEITA */
+    overflow-y: hidden; /* PARA ESCONDER O MENU ATÉ QUE A ANIMAÇÃO DO NAV.ACTIVE SEJA FEITA */
+  }
+}
+
+@media (max-width: 715px) {
 }
 
 @media (max-width: 712px) {
-  .nav {
-    align-self: end;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
 }
