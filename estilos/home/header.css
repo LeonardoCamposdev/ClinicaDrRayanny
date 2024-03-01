@@ -83,6 +83,8 @@
     display: block;
     height: 150px;
     width: 150px;
+    visibility: hidden; /* PARA ESCONDER O MENU ATÉ QUE A FUNÇÃO DO NAV.ACTIVE SEJA FEITA */
+    overflow-y: hidden; /* PARA ESCONDER O MENU ATÉ QUE A ANIMAÇÃO DO NAV.ACTIVE SEJA FEITA */
   }
 }
 
@@ -112,8 +114,9 @@
     background-color: #fff6e4;
   }
 
-  .nav.active .header-logo {
-    display: block;
+  .nav.active .header-logo-mobile {
+    visibility: visible;
+    overflow-y: auto;
   }
 
   .header-menu a {
