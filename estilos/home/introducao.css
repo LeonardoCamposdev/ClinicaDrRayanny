@@ -1,3 +1,37 @@
-.introducao {
+.introducao-container {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+.introducao-conteudo {
   height: 2000px;
+}
+
+.btn-introducao {
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: var(--cor-2);
+  color: var(--cor-0);
+  padding: 12px 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 1260px) {
+  .introducao-container {
+    margin-left: 0px;
+  }
+
+  .btn-introducao {
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: var(--cor-2);
+    color: var(--cor-0);
+    padding: 12px 80px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
 }
