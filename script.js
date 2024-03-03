@@ -26,8 +26,7 @@ function galeriaTrocar(event) {
   principal.alt = clicada.alt;
 }
 
-function galeriaCLick(imagem) {
+imagens.forEach((imagem) => {
   imagem.addEventListener("click", galeriaTrocar);
-}
-
-imagens.forEach(galeriaCLick);
+});
+// CONHEÇA O ESPAÇO TROCA DE IMG PRINCIPAL!!!
