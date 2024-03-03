@@ -21,9 +21,9 @@ const imagens = document.querySelectorAll(".lista-espaço img");
 
 function galeriaTrocar(event) {
   const principal = document.querySelector(".img-principal");
-  const clicada = event.currentTarget;
-  principal.src = clicada.src;
-  principal.alt = clicada.alt;
+  const clicada = event.currentTarget; // vai marcar a img clicada um target
+  principal.src = clicada.src; // vai trocar a img principal por a img que esta com o target
+  principal.alt = clicada.alt; // vai trocar a img principal por a img que esta com o target
 }
 
 imagens.forEach((imagem) => {
