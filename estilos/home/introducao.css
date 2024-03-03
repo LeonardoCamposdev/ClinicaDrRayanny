@@ -36,11 +36,12 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  padding-left: 100px;
+  justify-content: center;
 }
 
 .lista-tratamentos img {
   max-width: 250px;
+  border-radius: 6px;
 }
 
 .lista-tratamentos p {
