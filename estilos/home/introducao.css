@@ -5,18 +5,46 @@
 }
 
 .introducao-conteudo {
-  height: 2000px;
+  margin-bottom: 40px;
 }
 
 .btn-introducao {
   font-size: 0.9rem;
   font-weight: bold;
+  padding: 12px 100px;
   background-color: var(--cor-2);
   color: var(--cor-0);
-  padding: 12px 100px;
   border: none;
   border-radius: 5px;
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
+}
+
+.introducao-tratamentos {
+  background-color: #ebdfc7;
+  padding-bottom: 60px;
+}
+
+.introducao-tratamentos h1 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 40px 0px;
+}
+
+.lista-tratamentos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.lista-tratamentos img {
+  max-width: 250px;
+}
+
+.lista-tratamentos p {
+  text-align: center;
 }
 
 @media (max-width: 1260px) {
@@ -29,11 +57,8 @@
     font-weight: bold;
     background-color: var(--cor-2);
     color: var(--cor-0);
-    padding: 12px 80px;
+    padding: 10px 80px;
     border: none;
     border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
   }
 }
