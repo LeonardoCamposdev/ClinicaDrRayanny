@@ -1,7 +1,10 @@
+.faq-bg {
+  background-color: #ebdfc7;
+}
+
 .faq-container {
   margin-top: 40px;
   margin-left: 300px;
-  height: 1000px;
 }
 
 .faq-conteudo h1 {
@@ -36,7 +39,7 @@
 }
 
 .faq-lista dt.ativo::after {
-  content: "↑ ";
+  content: "↑";
   display: inline-block;
 }
 
@@ -64,6 +67,13 @@
   .faq-lista dd {
     font-size: 1rem;
     padding: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .faq-conteudo h1 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
