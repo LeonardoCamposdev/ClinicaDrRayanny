@@ -48,3 +48,4 @@ accordionList.forEach((item) => {
 });
 
 activeAccordion();
+// PERGUNTAS FREQUENTES

@@ -31,12 +31,12 @@
 }
 
 .faq-lista dt::after {
-  content: "🡫";
+  content: "↓";
   display: inline-block;
 }
 
 .faq-lista dt.ativo::after {
-  content: "🡩";
+  content: "↑ ";
   display: inline-block;
 }
 
