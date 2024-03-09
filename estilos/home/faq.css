@@ -60,8 +60,13 @@
 }
 
 @media (max-width: 550px) {
+  .faq-conteudo h1 {
+    font-size: 1.8rem;
+  }
+
   .faq-lista dt {
     padding: 20px;
+    font-size: 1.2rem;
   }
 
   .faq-lista dd {

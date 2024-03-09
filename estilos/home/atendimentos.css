@@ -56,6 +56,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .atendimentos-conteudo h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 500px) {
   iframe {
     height: 350px;
