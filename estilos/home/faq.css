@@ -43,10 +43,6 @@
   display: inline-block;
 }
 
-.faq-lista dd {
-  padding-bottom: 40px;
-}
-
 @media (max-width: 1260px) {
   .faq-container {
     margin-left: 0px;
@@ -91,6 +87,7 @@
 .dd-resposta.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
+  padding-bottom: 46px;
 }
 
 @keyframes slideDown {
