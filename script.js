@@ -32,20 +32,19 @@ imagens.forEach((imagem) => {
 // CONHEÇA O ESPAÇO TROCA DE IMG PRINCIPAL!!!
 
 // PERGUNTAS FREQUENTES
-const accordionList = document.querySelectorAll(".dt-pergunta");
+const dtPergunta = document.querySelectorAll(".dt-pergunta");
 const activeClass = "ativo";
 
-accordionList[0].classList.add(activeClass);
-accordionList[0].nextElementSibling.classList.add(activeClass);
-
-function activeAccordion() {
-  this.classList.toggle(activeClass);
-  this.nextElementSibling.classList.toggle(activeClass);
+dtPergunta[0].classList.add(activeClass);
+dtPergunta[0].nextElementSibling.classList.add(activeClass);
+function ativarResposta() {
+  this.classList.toggle(activeClass); //dt
+  this.nextElementSibling.classList.toggle(activeClass); //dd
 }
 
-accordionList.forEach((item) => {
-  item.addEventListener("click", activeAccordion);
+dtPergunta.forEach((item) => {
+  item.addEventListener("click", ativarResposta);
 });
 
-activeAccordion();
+ativarResposta();
 // PERGUNTAS FREQUENTES
