@@ -19,6 +19,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   padding: 40px 40px;
+  margin-left: 40px;
 }
 
 .sobre-mim-img {
@@ -50,6 +51,7 @@
 @media (max-width: 1060px) {
   .sobre-mim-grid {
     grid-template-columns: 1fr;
+    margin-left: 0px;
   }
 
   .sobre-mim-conteudo p {
