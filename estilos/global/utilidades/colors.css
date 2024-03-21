@@ -1,10 +1,11 @@
 :root {
   --cor-0: #fff;
   --cor-1: #000;
-  --cor-2: #C20000;
+  --cor-2: #c20000;
   --cor-4: #fff6e4;
   --cor-5: #232323;
   --cor-6: #dec0f1;
+  --cor-7: #93472B;
 }
 
 .cor-0 {
@@ -25,4 +26,8 @@
 
 .cor-6 {
   color: var(--cor-6);
+}
+
+.cor-7 {
+  color: var(--cor-7);
 }

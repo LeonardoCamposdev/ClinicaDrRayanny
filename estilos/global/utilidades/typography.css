@@ -1,7 +1,13 @@
-.font-poppins{
-  font-family: 'Poppins', sans-serif;
+.font-poppins {
+  font-family: "Poppins", sans-serif;
 }
 
-.font-montserrat{
-  font-family: 'Montserrat', sans-serif;
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.inder-regular {
+  font-family: "Inder", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
