@@ -1,0 +1,71 @@
+.tratamentos-bg {
+  background-color: var(--cor-4);
+}
+
+.tratamentos-container {
+  margin-left: 300px;
+}
+
+.tratamentos-conteudo h1 {
+  font-size: 1.5rem;
+  padding: 50px 0px;
+  text-align: center;
+  color: var(--cor-0);
+  background-color: #a1774b;
+}
+
+.tratamentos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 40px 40px;
+  margin: 0px 80px;
+}
+
+.tratamentos-img {
+  max-width: 400px;
+}
+
+.tratamentos-conteudo p {
+  line-height: 1.8;
+}
+
+.tratamentos-lista {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tratamentos-grid ul {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tratamentos-redes img {
+  max-width: 35px;
+}
+
+@media (max-width: 1260px) {
+  .tratamentos-container {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .tratamentos-grid {
+    display: block;
+    margin: 0px;
+  }
+
+  .tratamentos-conteudo p {
+    margin-bottom: 40px;
+  }
+
+  .tratamentos-img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
