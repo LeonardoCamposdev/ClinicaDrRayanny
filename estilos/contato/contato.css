@@ -1,0 +1,49 @@
+.contato-bg {
+  background-color: var(--cor-4);
+}
+
+.contato-container {
+  margin-left: 300px;
+}
+
+.contato-conteudo h1 {
+  font-size: 1.5rem;
+  padding: 50px 0px;
+  text-align: center;
+  color: var(--cor-0);
+  background-color: #a1774b;
+}
+
+.contato-redes {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0px;
+}
+
+.contato-redes img {
+  max-width: 35px;
+}
+
+@media (max-width: 1260px) {
+  .contato-container {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .contato-grid {
+    display: block;
+    margin: 0px;
+  }
+
+  .contato-conteudo p {
+    margin-bottom: 40px;
+  }
+
+  .contato-img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
